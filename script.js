@@ -6,13 +6,6 @@ const groupBtn = document.getElementById('groupBtn');
 const btnIjo = document.getElementById('btnIjo');
 const btnMerah = document.getElementById('btnMerah');
 
-btnIjo.onclick = function () {
-  klikIjo();
-};
-btnMerah.onclick = function () {
-  klikMerah();
-};
-
 function klikIjo() {
   tittle.innerHTML = 'Anda Berbohong!';
   description.innerHTML = 'Anda adalah seorang Teknisi';
@@ -29,4 +22,11 @@ function klikMerah() {
     image.src = 'img/mahasiswa.png';
     image.style.marginTop = '-170px';
     groupBtn.style.display = 'none';
+};
+
+btnIjo.onclick = function () {
+  klikIjo();
+};
+btnMerah.onclick = function () {
+  klikMerah();
 };
